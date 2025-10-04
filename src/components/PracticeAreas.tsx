@@ -41,21 +41,21 @@ export default function PracticeAreas() {
       <div aria-hidden className="absolute inset-0 pointer-events-none select-none overflow-hidden">
         <div className="absolute inset-0 opacity-5">
           <div className="absolute inset-0" style={{ 
-            background: 'radial-gradient(circle at 25% 25%, #D9B166 0%, transparent 50%), radial-gradient(circle at 75% 75%, #282E40 0%, transparent 50%)',
+            background: 'radial-gradient(circle at 25% 25%, #D9B26A 0%, transparent 50%), radial-gradient(circle at 75% 75%, #011640 0%, transparent 50%)',
           }}></div>
         </div>
-        <div className="absolute top-20 right-10 w-72 h-72 bg-gradient-to-br from-[#D9B166]/10 to-transparent rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-20 left-10 w-64 h-64 bg-gradient-to-tr from-[#282E40]/10 to-transparent rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute top-20 right-10 w-72 h-72 bg-gradient-to-br from-[#D9B26A]/10 to-transparent rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-20 left-10 w-64 h-64 bg-gradient-to-tr from-[#011640]/10 to-transparent rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }}></div>
       </div>
 
       <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         <SectionTransition>
           <div className="text-center mb-12 lg:mb-16">
             {/* H2 - Tamaños optimizados UX/UI */}
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#282E40] font-playfair mb-4 leading-tight">
-              Áreas de <span className="bg-gradient-to-r from-[#D9B166] to-[#c19a4d] bg-clip-text text-transparent">práctica</span>
+            <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#011640] font-playfair mb-4 leading-tight">
+              Áreas de <span className="bg-gradient-to-r from-[#D9B26A] to-[#c19a4d] bg-clip-text text-transparent">práctica</span>
             </h2>
-            <div className="w-20 h-0.5 bg-[#D9B166] mx-auto mb-6"></div>
+            <div className="w-20 h-0.5 bg-[#D9B26A] mx-auto mb-6"></div>
             {/* Párrafo principal - Optimizado */}
             <p className="text-base lg:text-lg text-[#6B7280] font-source-sans max-w-3xl mx-auto leading-relaxed">
               Brindamos soluciones legales especializadas en las principales áreas del derecho 
@@ -67,13 +67,13 @@ export default function PracticeAreas() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
           {PRACTICE_AREAS.map((area, index) => (
             <SectionTransition key={area.title} delay={100 + (index * 100)}>
-              <div className="group bg-white p-6 shadow-lg border border-gray-200 hover:border-[#D9B166] hover:shadow-xl transition-all duration-300 hover:-translate-y-1 h-full flex flex-col relative overflow-hidden">
+              <div className="group bg-white p-6 shadow-lg border border-gray-200 hover:border-[#D9B26A] hover:shadow-xl transition-all duration-300 hover:-translate-y-1 h-full flex flex-col relative overflow-hidden">
                 {/* Elemento decorativo */}
-                <div className="absolute top-0 right-0 w-16 h-16 bg-gradient-to-br from-[#D9B166]/10 to-transparent"></div>
+                <div className="absolute top-0 right-0 w-16 h-16 bg-gradient-to-br from-[#D9B26A]/10 to-transparent"></div>
                 
 
                 {/* Título - Optimizado UX/UI */}
-                <h3 className="font-bold text-base lg:text-lg font-playfair text-[#282E40] mb-3 leading-tight group-hover:text-[#D9B166] transition-colors duration-300 relative z-10">
+                <h3 className="font-bold text-base lg:text-lg font-playfair text-[#011640] mb-3 leading-tight group-hover:text-[#D9B26A] transition-colors duration-300 relative z-10">
                   {area.title}
                 </h3>
 
@@ -86,14 +86,14 @@ export default function PracticeAreas() {
                 <div className="space-y-1.5 mb-4">
                   {area.features.map((feature, idx) => (
                     <div key={idx} className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 bg-[#D9B166] flex-shrink-0"></div>
+                      <div className="w-1.5 h-1.5 bg-[#D9B26A] flex-shrink-0"></div>
                       <span className="text-xs lg:text-sm text-[#4B5563] font-source-sans">{feature}</span>
                     </div>
                   ))}
                 </div>
 
                 {/* Línea decorativa - Más sutil */}
-                <div className="h-px bg-gradient-to-r from-transparent via-[#D9B166]/50 to-transparent group-hover:via-[#D9B166] transition-colors duration-300"></div>
+                <div className="h-px bg-gradient-to-r from-transparent via-[#D9B26A]/50 to-transparent group-hover:via-[#D9B26A] transition-colors duration-300"></div>
               </div>
             </SectionTransition>
           ))}
@@ -104,12 +104,12 @@ export default function PracticeAreas() {
           <div className="mt-16 lg:mt-20">
             <div className="bg-gradient-to-br from-gray-50 to-white p-8 lg:p-12 border border-gray-200 shadow-lg relative overflow-hidden max-w-4xl mx-auto">
               {/* Elementos decorativos sutiles */}
-              <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-[#D9B166]/10 to-transparent"></div>
-              <div className="absolute bottom-0 left-0 w-20 h-20 bg-gradient-to-tr from-[#282E40]/5 to-transparent"></div>
+              <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-[#D9B26A]/10 to-transparent"></div>
+              <div className="absolute bottom-0 left-0 w-20 h-20 bg-gradient-to-tr from-[#011640]/5 to-transparent"></div>
               
               <div className="relative z-10 text-center">
                 {/* H3 - Tamaño optimizado UX/UI */}
-                <h3 className="text-xl lg:text-2xl font-bold text-[#282E40] font-playfair mb-4">
+                <h3 className="text-xl lg:text-2xl font-bold text-[#011640] font-playfair mb-4">
                   ¿Tu caso no figura en la lista?
                 </h3>
                 {/* Párrafo - Más conciso */}
@@ -121,7 +121,7 @@ export default function PracticeAreas() {
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Link
                     href="https://wa.me/5492995294952?text=Hola%20quisiera%20hacer%20una%20consulta"
-                    className="group inline-flex items-center justify-center px-6 py-3 font-semibold text-[#282E40] bg-[#D9B166] hover:bg-[#c19a4d] transition-all duration-300 hover:shadow-lg transform hover:-translate-y-0.5 text-sm"
+                    className="group inline-flex items-center justify-center px-6 py-3 font-semibold text-[#011640] bg-[#D9B26A] hover:bg-[#c19a4d] transition-all duration-300 hover:shadow-lg transform hover:-translate-y-0.5 text-sm"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -132,7 +132,7 @@ export default function PracticeAreas() {
                   </Link>
                   <Link
                     href="#contacto"
-                    className="inline-flex items-center justify-center px-6 py-3 font-semibold text-[#282E40] border border-gray-300 bg-white hover:border-[#D9B166] hover:bg-[#D9B166] hover:text-white transition-all duration-300 hover:shadow-lg text-sm"
+                    className="inline-flex items-center justify-center px-6 py-3 font-semibold text-[#011640] border border-gray-300 bg-white hover:border-[#D9B26A] hover:bg-[#D9B26A] hover:text-white transition-all duration-300 hover:shadow-lg text-sm"
                   >
                     Enviar consulta
                   </Link>

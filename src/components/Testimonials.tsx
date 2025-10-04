@@ -29,18 +29,18 @@ export default function Testimonials() {
     <section id="testimonios" className="py-16 md:py-20 lg:py-24 bg-gradient-to-br from-[#F8F8F8] to-[#EFEFEF] relative overflow-hidden">
       {/* Elementos decorativos de fondo */}
       <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-1/4 left-0 w-80 h-80 bg-[#D96E48] rounded-full blur-3xl" />
-        <div className="absolute bottom-1/4 right-0 w-64 h-64 bg-[#737048] rounded-full blur-3xl" />
+        <div className="absolute top-1/4 left-0 w-80 h-80 bg-[#D9B26A] rounded-full blur-3xl" />
+        <div className="absolute bottom-1/4 right-0 w-64 h-64 bg-[#011640] rounded-full blur-3xl" />
       </div>
       
       <div className="relative max-w-content container-px mx-auto">
         <SectionTransition>
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#333333] font-montserrat mb-6">
-              Lo que Dicen Nuestros <span className="text-[#D96E48]">Clientes</span>
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#333333] font-montserrat mb-6">
+              Lo que Dicen Nuestros <span className="text-[#D9B26A]">Clientes</span>
             </h2>
-            <div className="w-20 h-1 bg-[#D96E48] mx-auto rounded-full mb-6"></div>
-            <p className="text-lg text-[#666666] font-lato max-w-3xl mx-auto leading-relaxed">
+            <div className="w-20 h-1 bg-[#D9B26A] mx-auto rounded-full mb-6"></div>
+            <p className="text-base text-[#666666] font-lato max-w-3xl mx-auto leading-relaxed">
               La confianza de nuestros clientes es nuestro mayor logro. Conoce sus experiencias trabajando con nosotros.
             </p>
           </div>
@@ -51,30 +51,30 @@ export default function Testimonials() {
             <SectionTransition key={index} delay={200 + (index * 150)}>
               <div className="group bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 relative overflow-hidden h-full flex flex-col">
                 {/* Elemento decorativo */}
-                <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-[#D96E48]/10 to-[#737048]/10 rounded-full -translate-y-10 translate-x-10 group-hover:scale-150 transition-transform duration-500"></div>
+                <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-[#D9B26A]/10 to-[#011640]/10 rounded-full -translate-y-10 translate-x-10 group-hover:scale-150 transition-transform duration-500"></div>
                 
                 {/* Rating */}
                 <div className="flex items-center gap-1 mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
-                    <div key={i} className="w-4 h-4 bg-[#D96E48] rounded-full"></div>
+                    <div key={i} className="w-4 h-4 bg-[#D9B26A] rounded-full"></div>
                   ))}
                 </div>
                 
                 {/* Quote */}
-                <blockquote className="text-base md:text-lg text-[#333333] font-lato leading-relaxed mb-6 relative flex-grow">
-                  <span className="text-4xl text-[#D96E48]/30 absolute -top-2 -left-2 font-serif">&ldquo;</span>
+                <blockquote className="text-sm md:text-base text-[#333333] font-lato leading-relaxed mb-6 relative flex-grow">
+                  <span className="text-4xl text-[#D9B26A]/30 absolute -top-2 -left-2 font-serif">&ldquo;</span>
                   {testimonial.quote}
-                  <span className="text-4xl text-[#D96E48]/30 absolute -bottom-2 -right-2 font-serif">&rdquo;</span>
+                  <span className="text-4xl text-[#D9B26A]/30 absolute -bottom-2 -right-2 font-serif">&rdquo;</span>
                 </blockquote>
                 
                 {/* Author info */}
                 <div className="flex items-center justify-between mt-auto">
                   <div>
                     <p className="font-semibold text-[#333333] font-montserrat">{testimonial.author}</p>
-                    <p className="text-sm text-[#D96E48] font-lato">{testimonial.case}</p>
+                    <p className="text-sm text-[#D9B26A] font-lato">{testimonial.case}</p>
                   </div>
-                  <div className="w-12 h-12 bg-[#D96E48]/10 rounded-full flex items-center justify-center group-hover:bg-[#D96E48]/20 transition-colors">
-                    <div className="w-6 h-6 bg-[#D96E48] rounded-full"></div>
+                  <div className="w-12 h-12 bg-[#D9B26A]/10 rounded-full flex items-center justify-center group-hover:bg-[#D9B26A]/20 transition-colors">
+                    <div className="w-6 h-6 bg-[#D9B26A] rounded-full"></div>
                   </div>
                 </div>
               </div>
@@ -85,9 +85,9 @@ export default function Testimonials() {
         {/* Call to action */}
         <SectionTransition delay={800}>
           <div className="mt-16 text-center">
-            <div className="inline-flex items-center gap-2 px-6 py-3 bg-[#D96E48]/10 rounded-full border border-[#D96E48]/20">
-              <div className="w-2 h-2 bg-[#D96E48] rounded-full animate-pulse"></div>
-              <span className="text-[#D96E48] font-lato text-sm font-semibold">
+            <div className="inline-flex items-center gap-2 px-6 py-3 bg-[#D9B26A]/10 rounded-full border border-[#D9B26A]/20">
+              <div className="w-2 h-2 bg-[#D9B26A] rounded-full animate-pulse"></div>
+              <span className="text-[#D9B26A] font-lato text-sm font-semibold">
                 Únete a más de 1000 clientes satisfechos
               </span>
             </div>

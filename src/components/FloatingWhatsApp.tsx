@@ -2,18 +2,43 @@ const WHATSAPP_URL = "https://wa.me/5492995294952?text=Hola%20quisiera%20hacer%2
 
 export default function FloatingWhatsApp() {
   return (
-    <a
-      href={WHATSAPP_URL}
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="Abrir WhatsApp"
-      className="fixed md:hidden bottom-6 right-6 z-50 w-14 h-14 rounded-full grid place-items-center shadow-xl hover-lift hover-glow animate-float transition-all duration-300"
-      style={{ background: '#D9B166', color: '#282E40' }}
-    >
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden className="transition-transform duration-300 group-hover:scale-110">
-        <path d="M20.52 3.48A11.94 11.94 0 0012.06 0C5.46 0 .12 5.34.12 11.94c0 2.1.54 4.14 1.56 5.94L0 24l6.3-1.62a12.04 12.04 0 005.76 1.5h.06c6.6 0 11.94-5.34 11.94-11.94 0-3.18-1.26-6.18-3.54-8.46zM12.12 22.08h-.06a9.96 9.96 0 01-5.1-1.38l-.36-.18-3.72.96.99-3.63-.24-.39a10.02 10.02 0 01-1.56-5.52C2.07 6.45 6.6 1.92 12.06 1.92c2.67 0 5.19 1.05 7.08 2.94a9.94 9.94 0 012.94 7.08c0 5.52-4.5 10.14-10.02 10.14zm5.82-7.5c-.33-.18-1.95-.96-2.25-1.08-.3-.12-.51-.18-.72.18-.21.36-.81 1.08-.99 1.32-.18.24-.36.27-.69.09-.33-.18-1.41-.51-2.67-1.62-.99-.87-1.65-1.95-1.86-2.28-.21-.33-.02-.51.16-.69.17-.17.39-.45.57-.69.18-.24.24-.39.36-.66.12-.27.06-.51-.03-.72-.09-.18-.72-1.74-.99-2.37-.26-.63-.54-.54-.72-.54h-.63c-.21 0-.54.09-.81.39-.27.3-1.06 1.05-1.06 2.55s1.08 2.97 1.23 3.18c.15.21 2.13 3.24 5.16 4.56.72.3 1.26.48 1.68.63.7.22 1.34.19 1.85.12.57-.09 1.95-.81 2.22-1.6.27-.78.27-1.44.18-1.59-.09-.15-.3-.24-.63-.42z"/>
-      </svg>
-    </a>
+    <div className="fixed bottom-6 right-6 z-50">
+      {/* Botón principal de WhatsApp */}
+      <a
+        href={WHATSAPP_URL}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Escribir por WhatsApp"
+        className="group flex items-center gap-3 bg-[#25D366] hover:bg-[#20BA5A] text-white px-4 py-3 rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-1"
+      >
+        {/* Ícono de WhatsApp */}
+        <div className="w-8 h-8 flex items-center justify-center">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" className="transition-transform duration-300 group-hover:scale-110">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+          </svg>
+        </div>
+        
+        {/* Texto del botón */}
+        <div className="hidden sm:block">
+          <div className="text-sm font-semibold">WhatsApp</div>
+          <div className="text-xs opacity-90">299-5294952</div>
+        </div>
+        
+        {/* Indicador de notificación */}
+        <div className="absolute -top-1 -right-1 w-3 h-3 bg-red-500 rounded-full animate-pulse"></div>
+      </a>
+      
+      {/* Botón de llamada (solo en móvil) */}
+      <a
+        href="tel:+5492995294952"
+        aria-label="Llamar por teléfono"
+        className="sm:hidden mt-3 w-12 h-12 bg-[#011640] hover:bg-[#1a2d4a] text-white rounded-full flex items-center justify-center shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
+      >
+        <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+        </svg>
+      </a>
+    </div>
   );
 }
 

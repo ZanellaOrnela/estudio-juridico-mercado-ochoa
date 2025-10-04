@@ -101,15 +101,15 @@ export default function ContactForm() {
         {showAlert && (
           <div className={`fixed top-4 left-4 right-4 sm:left-auto sm:right-4 sm:max-w-md z-50 mx-auto p-4 rounded-xl shadow-lg border-2 transition-all duration-500 transform ${
             alertType === "success" 
-              ? "bg-[#D9B166]/10 border-[#D9B166]/30 text-[#282E40]" 
+              ? "bg-[#D9B26A]/10 border-[#D9B26A]/30 text-[#011640]" 
               : "bg-red-50 border-red-200 text-red-800"
           }`}>
             <div className="flex items-center gap-3">
               <div className={`w-8 h-8 rounded-full flex items-center justify-center ${
-                alertType === "success" ? "bg-[#D9B166]/20" : "bg-red-100"
+                alertType === "success" ? "bg-[#D9B26A]/20" : "bg-red-100"
               }`}>
                 {alertType === "success" ? (
-                  <svg className="w-5 h-5 text-[#282E40]" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-5 h-5 text-[#011640]" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
                 ) : (
@@ -135,11 +135,11 @@ export default function ContactForm() {
 
         {/* Header con colores de marca */}
         <div className="text-center mb-12 lg:mb-16">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#282E40] font-playfair mb-4 leading-tight">
-            Consulta <span className="bg-gradient-to-r from-[#D9B166] to-[#c19a4d] bg-clip-text text-transparent">Inicial</span>
+          <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#011640] font-playfair mb-4 leading-tight">
+            Consulta <span className="bg-gradient-to-r from-[#D9B26A] to-[#c19a4d] bg-clip-text text-transparent">Inicial</span>
           </h2>
-          <div className="w-20 h-0.5 bg-[#D9B166] mx-auto mb-6"></div>
-          <p className="text-base lg:text-lg text-[#6B7280] font-source-sans max-w-3xl mx-auto leading-relaxed">
+          <div className="w-20 h-0.5 bg-[#D9B26A] mx-auto mb-6"></div>
+          <p className="text-sm lg:text-base text-[#6B7280] font-source-sans max-w-3xl mx-auto leading-relaxed">
             Contanos brevemente tu consulta y te responderemos en menos de 24 horas con una evaluación inicial.
           </p>
         </div>
@@ -190,18 +190,18 @@ export default function ContactForm() {
               <input type="hidden" name="_cc" value="estudiojuridicocrnk@gmail.com" />
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                 <div className="space-y-2">
-                  <label htmlFor="name" className="text-sm font-source-sans font-semibold text-[#282E40] flex items-center gap-2">
-                    <span className="w-2 h-1 bg-[#D9B166]"></span>
+                  <label htmlFor="name" className="text-sm font-source-sans font-semibold text-[#011640] flex items-center gap-2">
+                    <span className="w-2 h-1 bg-[#D9B26A]"></span>
                     Nombre Completo
                   </label>
                   <input
                     id="name"
                     name="name"
                     type="text"
-                    className={`w-full h-10 border bg-white px-3 text-[#282E40] placeholder-gray-400 focus:outline-none transition-all duration-300 font-source-sans relative z-30 ${
+                    className={`w-full h-10 border bg-white px-3 text-[#011640] placeholder-gray-400 focus:outline-none transition-all duration-300 font-source-sans relative z-30 ${
                       errors.name 
                         ? "border-red-300 focus:border-red-500" 
-                        : "border-gray-300 focus:border-[#D9B166]"
+                        : "border-gray-300 focus:border-[#D9B26A]"
                     }`}
                     placeholder="Tu nombre completo"
                     style={{ pointerEvents: 'auto' }}
@@ -216,18 +216,18 @@ export default function ContactForm() {
                   )}
                 </div>
                 <div className="space-y-2">
-                  <label htmlFor="email" className="text-sm font-source-sans font-semibold text-[#282E40] flex items-center gap-2">
-                    <span className="w-2 h-1 bg-[#D9B166]"></span>
+                  <label htmlFor="email" className="text-sm font-source-sans font-semibold text-[#011640] flex items-center gap-2">
+                    <span className="w-2 h-1 bg-[#D9B26A]"></span>
                     Correo Electrónico
                   </label>
                   <input
                     id="email"
                     name="email"
                     type="email"
-                    className={`w-full h-10 border bg-white px-3 text-[#282E40] placeholder-gray-400 focus:outline-none transition-all duration-300 font-source-sans relative z-30 ${
+                    className={`w-full h-10 border bg-white px-3 text-[#011640] placeholder-gray-400 focus:outline-none transition-all duration-300 font-source-sans relative z-30 ${
                       errors.email 
                         ? "border-red-300 focus:border-red-500" 
-                        : "border-gray-300 focus:border-[#D9B166]"
+                        : "border-gray-300 focus:border-[#D9B26A]"
                     }`}
                     placeholder="tu@email.com"
                     style={{ pointerEvents: 'auto' }}
@@ -244,41 +244,41 @@ export default function ContactForm() {
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                 <div className="space-y-2">
-                  <label htmlFor="phone" className="text-sm font-source-sans font-semibold text-[#282E40] flex items-center gap-2">
-                    <span className="w-2 h-1 bg-[#D9B166]"></span>
+                  <label htmlFor="phone" className="text-sm font-source-sans font-semibold text-[#011640] flex items-center gap-2">
+                    <span className="w-2 h-1 bg-[#D9B26A]"></span>
                     Teléfono
                   </label>
                   <input
                     id="phone"
                     name="phone"
                     type="tel"
-                    className="w-full h-10 border border-gray-300 bg-white px-3 text-[#282E40] placeholder-gray-400 focus:border-[#D9B166] focus:outline-none transition-all duration-300 font-source-sans relative z-30"
+                    className="w-full h-10 border border-gray-300 bg-white px-3 text-[#011640] placeholder-gray-400 focus:border-[#D9B26A] focus:outline-none transition-all duration-300 font-source-sans relative z-30"
                     placeholder="(11) 1234-5678"
                     style={{ pointerEvents: 'auto' }}
                   />
                 </div>
                 <div className="space-y-2">
-                  <label htmlFor="subject" className="text-sm font-source-sans font-semibold text-[#282E40] flex items-center gap-2">
-                    <span className="w-2 h-1 bg-[#D9B166]"></span>
+                  <label htmlFor="subject" className="text-sm font-source-sans font-semibold text-[#011640] flex items-center gap-2">
+                    <span className="w-2 h-1 bg-[#D9B26A]"></span>
                     Tipo de Consulta
                   </label>
                   <select
                     id="subject"
                     name="subject"
-                    className={`w-full h-10 border bg-white px-3 text-[#282E40] focus:outline-none transition-all duration-300 font-source-sans relative z-30 ${
+                    className={`w-full h-10 border bg-white px-3 text-[#011640] focus:outline-none transition-all duration-300 font-source-sans relative z-30 ${
                       errors.subject 
                         ? "border-red-300 focus:border-red-500" 
-                        : "border-gray-300 focus:border-[#D9B166]"
+                        : "border-gray-300 focus:border-[#D9B26A]"
                     }`}
                     style={{ pointerEvents: 'auto' }}
                   >
-                    <option value="" className="bg-white text-[#282E40]">Selecciona un área</option>
-                    <option value="Derecho Civil" className="bg-white text-[#282E40]">Derecho Civil</option>
-                    <option value="Derecho Comercial" className="bg-white text-[#282E40]">Derecho Comercial</option>
-                    <option value="Derecho Laboral" className="bg-white text-[#282E40]">Derecho Laboral</option>
-                    <option value="Derecho de Familia" className="bg-white text-[#282E40]">Derecho de Familia</option>
-                    <option value="Sucesiones" className="bg-white text-[#282E40]">Sucesiones</option>
-                    <option value="Otro" className="bg-white text-[#282E40]">Otro</option>
+                    <option value="" className="bg-white text-[#011640]">Selecciona un área</option>
+                    <option value="Derecho Civil" className="bg-white text-[#011640]">Derecho Civil</option>
+                    <option value="Derecho Comercial" className="bg-white text-[#011640]">Derecho Comercial</option>
+                    <option value="Derecho Laboral" className="bg-white text-[#011640]">Derecho Laboral</option>
+                    <option value="Derecho de Familia" className="bg-white text-[#011640]">Derecho de Familia</option>
+                    <option value="Sucesiones" className="bg-white text-[#011640]">Sucesiones</option>
+                    <option value="Otro" className="bg-white text-[#011640]">Otro</option>
                   </select>
                   {errors.subject && (
                     <p className="text-red-500 text-xs font-source-sans mt-1 flex items-center gap-1">
@@ -291,18 +291,18 @@ export default function ContactForm() {
                 </div>
               </div>
               <div className="space-y-2">
-                <label htmlFor="message" className="text-sm font-source-sans font-semibold text-[#282E40] flex items-center gap-2">
-                  <span className="w-2 h-1 bg-[#D9B166]"></span>
+                <label htmlFor="message" className="text-sm font-source-sans font-semibold text-[#011640] flex items-center gap-2">
+                  <span className="w-2 h-1 bg-[#D9B26A]"></span>
                   Describe tu Consulta
                 </label>
                 <textarea
                   id="message"
                   name="message"
                   rows={5}
-                  className={`w-full border bg-white px-3 py-3 text-[#282E40] placeholder-gray-400 focus:outline-none transition-all duration-300 font-source-sans resize-none relative z-30 ${
+                  className={`w-full border bg-white px-3 py-3 text-[#011640] placeholder-gray-400 focus:outline-none transition-all duration-300 font-source-sans resize-none relative z-30 ${
                     errors.message 
                       ? "border-red-300 focus:border-red-500" 
-                      : "border-gray-300 focus:border-[#D9B166]"
+                      : "border-gray-300 focus:border-[#D9B26A]"
                   }`}
                   placeholder="Describe brevemente tu situación legal. Cuanto más detalle proporciones, mejor podremos ayudarte..."
                   style={{ pointerEvents: 'auto' }}
@@ -320,7 +320,7 @@ export default function ContactForm() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full sm:w-auto px-6 py-3 bg-[#D9B166] hover:bg-[#c19a4d] text-[#282E40] font-semibold transition-all duration-300 font-source-sans text-sm shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 relative z-30 disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="w-full sm:w-auto px-6 py-3 bg-[#D9B26A] hover:bg-[#c19a4d] text-[#011640] font-semibold transition-all duration-300 font-source-sans text-sm shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 relative z-30 disabled:opacity-50 disabled:cursor-not-allowed"
                   style={{ pointerEvents: 'auto' }}
                 >
                   {isSubmitting ? "Enviando..." : "Enviar Consulta"}
@@ -333,24 +333,24 @@ export default function ContactForm() {
           {/* Información adicional */}
           <div className="mt-12 grid md:grid-cols-3 gap-8 text-center">
             <div className="space-y-3 transition-all duration-300 hover:-translate-y-1">
-              <div className="w-10 h-10 bg-[#D9B166]/15 flex items-center justify-center mx-auto">
-                <div className="w-4 h-0.5 bg-[#D9B166]"></div>
+              <div className="w-10 h-10 bg-[#D9B26A]/15 flex items-center justify-center mx-auto">
+                <div className="w-4 h-0.5 bg-[#D9B26A]"></div>
               </div>
-              <h3 className="text-[#282E40] font-semibold font-playfair text-sm">Respuesta Rápida</h3>
+              <h3 className="text-[#011640] font-semibold font-playfair text-sm">Respuesta Rápida</h3>
               <p className="text-[#6B7280] text-sm font-source-sans">Te contactamos en menos de 24 horas</p>
             </div>
             <div className="space-y-3 transition-all duration-300 hover:-translate-y-1">
-              <div className="w-10 h-10 bg-[#D9B166]/15 flex items-center justify-center mx-auto">
-                <div className="w-4 h-0.5 bg-[#282E40]"></div>
+              <div className="w-10 h-10 bg-[#D9B26A]/15 flex items-center justify-center mx-auto">
+                <div className="w-4 h-0.5 bg-[#011640]"></div>
               </div>
-              <h3 className="text-[#282E40] font-semibold font-playfair text-sm">Atención Personalizada</h3>
+              <h3 className="text-[#011640] font-semibold font-playfair text-sm">Atención Personalizada</h3>
               <p className="text-[#6B7280] text-sm font-source-sans">Trato directo con los abogados</p>
             </div>
             <div className="space-y-3 transition-all duration-300 hover:-translate-y-1">
-              <div className="w-10 h-10 bg-[#D9B166]/15 flex items-center justify-center mx-auto">
-                <div className="w-4 h-0.5 bg-[#D9B166]"></div>
+              <div className="w-10 h-10 bg-[#D9B26A]/15 flex items-center justify-center mx-auto">
+                <div className="w-4 h-0.5 bg-[#D9B26A]"></div>
               </div>
-              <h3 className="text-[#282E40] font-semibold font-playfair text-sm">Confidencialidad</h3>
+              <h3 className="text-[#011640] font-semibold font-playfair text-sm">Confidencialidad</h3>
               <p className="text-[#6B7280] text-sm font-source-sans">Absoluta reserva profesional</p>
             </div>
           </div>

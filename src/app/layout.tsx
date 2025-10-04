@@ -51,13 +51,120 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const schemaMarkup = {
+    "@context": "https://schema.org",
+    "@type": "LegalService",
+    "name": "Estudio Jurídico Mercado Ochoa Abogados",
+    "description": "Abogados en Neuquén Capital y Río Negro con 5 años de experiencia. Soluciones legales claras y efectivas en derecho civil, familia, laboral, ambiental y accidentes de tránsito.",
+    "url": "https://example.com",
+    "logo": "https://example.com/ChatGPT Image 1 oct 2025, 11_38_06 p.m..png",
+    "image": "https://example.com/ChatGPT Image 1 oct 2025, 11_38_06 p.m..png",
+    "telephone": "+5492995294952",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Córdoba 466",
+      "addressLocality": "Neuquén Capital",
+      "addressRegion": "Neuquén",
+      "addressCountry": "AR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "-38.9516",
+      "longitude": "-68.0591"
+    },
+    "openingHours": "Mo-Fr 09:00-18:00",
+    "areaServed": [
+      {
+        "@type": "City",
+        "name": "Neuquén Capital"
+      },
+      {
+        "@type": "State",
+        "name": "Río Negro"
+      }
+    ],
+    "serviceType": [
+      "Derecho Civil",
+      "Contratos",
+      "Familia y Sucesiones",
+      "Derecho Laboral",
+      "Derecho Ambiental",
+      "Accidentes de Tránsito"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Servicios Legales",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Derecho Civil y Contratos",
+            "description": "Asesoría legal en derecho civil, contratos y obligaciones"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Familia y Sucesiones",
+            "description": "Divorcios, sucesiones, alimentos y derecho de familia"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Derecho Laboral",
+            "description": "Despidos, accidentes laborales y conflictos laborales"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Derecho Ambiental",
+            "description": "Asesoría en normativa ambiental y conflictos ambientales"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Accidentes de Tránsito",
+            "description": "Reclamos por accidentes de tránsito y seguros"
+          }
+        }
+      ]
+    },
+    "sameAs": [
+      "https://instagram.com/mercadoochoaabogados",
+      "https://linkedin.com/company/estudio-juridico-mercado-ochoa-abogados"
+    ]
+  };
+
   return (
     <html lang="es">
       <head>
+        {/* Schema Markup */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}
+        />
+        
+        {/* Canonical URL */}
+        <link rel="canonical" href="https://example.com" />
+        
         {/* Force favicon to use site logo, overriding default favicon.ico */}
         <link rel="icon" href="/ChatGPT Image 1 oct 2025, 11_38_06 p.m..png?v=4" />
         <link rel="icon" type="image/png" sizes="32x32" href="/ChatGPT Image 1 oct 2025, 11_38_06 p.m..png?v=4" />
         <link rel="apple-touch-icon" href="/ChatGPT Image 1 oct 2025, 11_38_06 p.m..png?v=4" />
+        
+        {/* Additional meta tags */}
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="index, follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#011640" />
       </head>
       <body
         className={`${playfairDisplay.variable} ${sourceSans3.variable} antialiased transition-all duration-300 bg-transparent`}

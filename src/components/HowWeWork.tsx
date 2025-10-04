@@ -59,18 +59,18 @@ export default function HowWeWork() {
               backgroundSize: '60px 60px'
             }}></div>
           </div>
-          <div className="absolute top-20 left-20 w-80 h-80 bg-gradient-to-br from-[#D9B166]/10 to-transparent rounded-full blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-20 right-20 w-64 h-64 bg-gradient-to-tl from-[#282E40]/10 to-transparent rounded-full blur-3xl animate-pulse" style={{ animationDelay: '3s' }}></div>
+          <div className="absolute top-20 left-20 w-80 h-80 bg-gradient-to-br from-[#D9B26A]/10 to-transparent rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-20 right-20 w-64 h-64 bg-gradient-to-tl from-[#011640]/10 to-transparent rounded-full blur-3xl animate-pulse" style={{ animationDelay: '3s' }}></div>
       </div>
         
         <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         <SectionTransition>
             <div className="text-center mb-12 lg:mb-16">
               {/* H2 - Tamaños optimizados UX/UI */}
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#282E40] font-playfair mb-4 leading-tight">
-                Cómo <span className="bg-gradient-to-r from-[#D9B166] to-[#c19a4d] bg-clip-text text-transparent">trabajamos</span>
+              <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#011640] font-playfair mb-4 leading-tight">
+                Cómo <span className="bg-gradient-to-r from-[#D9B26A] to-[#c19a4d] bg-clip-text text-transparent">trabajamos</span>
             </h2>
-              <div className="w-20 h-0.5 bg-[#D9B166] mx-auto mb-6"></div>
+              <div className="w-20 h-0.5 bg-[#D9B26A] mx-auto mb-6"></div>
               {/* Párrafo principal - Optimizado */}
               <p className="text-base lg:text-lg text-[#6B7280] font-source-sans max-w-3xl mx-auto leading-relaxed">
                 Nuestro proceso de trabajo está diseñado para brindarte transparencia, seguimiento constante 
@@ -82,19 +82,19 @@ export default function HowWeWork() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10">
           {WORK_STEPS.map((step, index) => (
             <SectionTransition key={step.step} delay={100 + (index * 150)}>
-                <div className="group bg-white p-6 shadow-lg border border-gray-200 hover:border-[#D9B166] hover:shadow-xl transition-all duration-300 hover:-translate-y-1 h-full flex flex-col text-center relative overflow-hidden">
+                <div className="group bg-white p-6 shadow-lg border border-gray-200 hover:border-[#D9B26A] hover:shadow-xl transition-all duration-300 hover:-translate-y-1 h-full flex flex-col text-center relative overflow-hidden">
                   {/* Elemento decorativo */}
-                  <div className="absolute top-0 right-0 w-16 h-16 bg-gradient-to-bl from-[#D9B166]/10 to-transparent"></div>
+                  <div className="absolute top-0 right-0 w-16 h-16 bg-gradient-to-bl from-[#D9B26A]/10 to-transparent"></div>
                   
                   {/* Número del paso optimizado */}
                   <div className="relative mb-4">
-                    <div className="w-12 h-12 bg-gradient-to-br from-[#D9B166] to-[#c19a4d] text-[#282E40] font-bold text-lg font-playfair flex items-center justify-center mx-auto shadow-md group-hover:scale-105 transition-transform duration-300">
+                    <div className="w-12 h-12 bg-gradient-to-br from-[#D9B26A] to-[#c19a4d] text-[#011640] font-bold text-lg font-playfair flex items-center justify-center mx-auto shadow-md group-hover:scale-105 transition-transform duration-300">
                     {step.step}
                     </div>
                   </div>
 
                   {/* Título - Optimizado UX/UI */}
-                  <h3 className="font-bold text-base lg:text-lg text-[#282E40] font-playfair mb-3 leading-tight">
+                  <h3 className="font-bold text-base lg:text-lg text-[#011640] font-playfair mb-3 leading-tight">
                     {step.title}
                   </h3>
 
@@ -105,7 +105,7 @@ export default function HowWeWork() {
 
                 {/* Footer decorativo más sutil */}
                   <div className="mt-4 pt-4">
-                    <div className="h-px w-8 bg-gradient-to-r from-transparent via-[#D9B166] to-transparent mx-auto"></div>
+                    <div className="h-px w-8 bg-gradient-to-r from-transparent via-[#D9B26A] to-transparent mx-auto"></div>
                   </div>
               </div>
             </SectionTransition>
@@ -120,10 +120,10 @@ export default function HowWeWork() {
           <SectionTransition>
             <div className="text-center mb-12 lg:mb-16">
               {/* H2 - Tamaños optimizados UX/UI */}
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#282E40] font-playfair mb-4 leading-tight">
-                Por qué <span className="bg-gradient-to-r from-[#D9B166] to-[#c19a4d] bg-clip-text text-transparent">elegirnos</span>
+              <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#011640] font-playfair mb-4 leading-tight">
+                Por qué <span className="bg-gradient-to-r from-[#D9B26A] to-[#c19a4d] bg-clip-text text-transparent">elegirnos</span>
               </h2>
-              <div className="w-20 h-0.5 bg-[#D9B166] mx-auto mb-6"></div>
+              <div className="w-20 h-0.5 bg-[#D9B26A] mx-auto mb-6"></div>
               {/* Párrafo principal - Optimizado */}
               <p className="text-base lg:text-lg text-[#6B7280] font-source-sans max-w-3xl mx-auto leading-relaxed">
                 Conocé las razones que nos convierten en tu mejor opción para resolver tus asuntos legales 
@@ -135,12 +135,12 @@ export default function HowWeWork() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
             {WHY_CHOOSE_US.map((reason, index) => (
               <SectionTransition key={index} delay={100 + (index * 100)}>
-                <div className="group bg-white p-6 shadow-lg border border-gray-200 hover:border-[#D9B166] hover:shadow-xl transition-all duration-300 hover:-translate-y-1 h-full flex flex-col relative overflow-hidden">
+                <div className="group bg-white p-6 shadow-lg border border-gray-200 hover:border-[#D9B26A] hover:shadow-xl transition-all duration-300 hover:-translate-y-1 h-full flex flex-col relative overflow-hidden">
                   {/* Elemento decorativo */}
-                  <div className="absolute top-0 right-0 w-16 h-16 bg-gradient-to-bl from-[#D9B166]/10 to-transparent"></div>
+                  <div className="absolute top-0 right-0 w-16 h-16 bg-gradient-to-bl from-[#D9B26A]/10 to-transparent"></div>
                   
                   {/* Título - Optimizado UX/UI */}
-                  <h4 className="text-[#282E40] font-playfair font-bold text-base lg:text-lg leading-tight mb-3 flex-grow relative z-10">
+                  <h4 className="text-[#011640] font-playfair font-bold text-base lg:text-lg leading-tight mb-3 flex-grow relative z-10">
                     {reason.title}
                   </h4>
 
@@ -151,7 +151,7 @@ export default function HowWeWork() {
 
                   {/* Línea decorativa más sutil */}
                   <div className="mt-4 pt-4">
-                    <div className="h-px bg-gradient-to-r from-transparent via-[#D9B166]/50 to-transparent group-hover:via-[#D9B166] transition-colors duration-300"></div>
+                    <div className="h-px bg-gradient-to-r from-transparent via-[#D9B26A]/50 to-transparent group-hover:via-[#D9B26A] transition-colors duration-300"></div>
                   </div>
                 </div>
               </SectionTransition>
@@ -161,9 +161,9 @@ export default function HowWeWork() {
           {/* CTA Section */}
           <SectionTransition delay={800}>
             <div className="mt-16 lg:mt-20 text-center">
-              <div className="bg-gradient-to-r from-[#282E40] to-[#1e2532] p-8 lg:p-12 text-white relative overflow-hidden max-w-4xl mx-auto">
+              <div className="bg-gradient-to-r from-[#011640] to-[#1e2532] p-8 lg:p-12 text-white relative overflow-hidden max-w-4xl mx-auto">
                 {/* Elementos decorativos sutiles */}
-                <div className="absolute top-0 left-0 w-24 h-24 bg-[#D9B166]/10"></div>
+                <div className="absolute top-0 left-0 w-24 h-24 bg-[#D9B26A]/10"></div>
                 <div className="absolute bottom-0 right-0 w-20 h-20 bg-white/5"></div>
                 
                 <div className="relative z-10">
@@ -180,7 +180,7 @@ export default function HowWeWork() {
                   <div className="flex flex-col sm:flex-row gap-4 justify-center">
                     <a
                       href="https://wa.me/5492995294952?text=Hola%20quisiera%20hacer%20una%20consulta"
-                      className="group inline-flex items-center justify-center px-6 py-3 font-semibold text-[#282E40] bg-[#D9B166] hover:bg-[#c19a4d] transition-all duration-300 hover:shadow-lg transform hover:-translate-y-0.5 text-sm"
+                      className="group inline-flex items-center justify-center px-6 py-3 font-semibold text-[#011640] bg-[#D9B26A] hover:bg-[#c19a4d] transition-all duration-300 hover:shadow-lg transform hover:-translate-y-0.5 text-sm"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -191,7 +191,7 @@ export default function HowWeWork() {
                     </a>
                     <a
                       href="#contacto"
-                      className="inline-flex items-center justify-center px-6 py-3 font-semibold text-white border border-white/30 hover:border-[#D9B166] hover:bg-[#D9B166] hover:text-[#282E40] transition-all duration-300 text-sm"
+                      className="inline-flex items-center justify-center px-6 py-3 font-semibold text-white border border-white/30 hover:border-[#D9B26A] hover:bg-[#D9B26A] hover:text-[#011640] transition-all duration-300 text-sm"
                     >
                       Enviar consulta
                     </a>

@@ -43,7 +43,7 @@ export default function Header() {
               <div className="font-playfair font-bold text-base lg:text-lg leading-tight drop-shadow-lg text-white transition-colors duration-300">
                 Mercado Ochoa
               </div>
-              <div className="text-[#D9B166] font-source-sans text-sm lg:text-base font-medium drop-shadow-md">
+              <div className="text-[#D9B26A] font-source-sans text-sm lg:text-base font-medium drop-shadow-md">
                 Abogados
               </div>
             </div>
@@ -54,31 +54,31 @@ export default function Header() {
         <nav className="hidden lg:flex items-center space-x-10 xl:space-x-12">
           <Link 
             href="#inicio" 
-            className="text-white font-source-sans font-medium text-base hover:text-[#D9B166] transition-colors duration-300 relative group py-3 drop-shadow-lg"
+            className="text-white font-source-sans font-medium text-base hover:text-[#D9B26A] transition-colors duration-300 relative group py-3 drop-shadow-lg"
           >
             Inicio
-            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#D9B166] transition-all duration-300 group-hover:w-full"></span>
+            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#D9B26A] transition-all duration-300 group-hover:w-full"></span>
           </Link>
           <Link 
             href="#nosotros" 
-            className="text-white font-source-sans font-medium text-base hover:text-[#D9B166] transition-colors duration-300 relative group py-3 drop-shadow-lg"
+            className="text-white font-source-sans font-medium text-base hover:text-[#D9B26A] transition-colors duration-300 relative group py-3 drop-shadow-lg"
           >
             Quiénes Somos
-            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#D9B166] transition-all duration-300 group-hover:w-full"></span>
+            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#D9B26A] transition-all duration-300 group-hover:w-full"></span>
           </Link>
           <Link 
             href="#servicios" 
-            className="text-white font-source-sans font-medium text-base hover:text-[#D9B166] transition-colors duration-300 relative group py-3 drop-shadow-lg"
+            className="text-white font-source-sans font-medium text-base hover:text-[#D9B26A] transition-colors duration-300 relative group py-3 drop-shadow-lg"
           >
             Áreas de Práctica
-            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#D9B166] transition-all duration-300 group-hover:w-full"></span>
+            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#D9B26A] transition-all duration-300 group-hover:w-full"></span>
           </Link>
           <Link 
             href="#contacto" 
-            className="text-white font-source-sans font-medium text-base hover:text-[#D9B166] transition-colors duration-300 relative group py-3 drop-shadow-lg"
+            className="text-white font-source-sans font-medium text-base hover:text-[#D9B26A] transition-colors duration-300 relative group py-3 drop-shadow-lg"
           >
             Contacto
-            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#D9B166] transition-all duration-300 group-hover:w-full"></span>
+            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#D9B26A] transition-all duration-300 group-hover:w-full"></span>
           </Link>
         </nav>
         
@@ -86,7 +86,7 @@ export default function Header() {
         <div className="hidden lg:block">
           <Link
             href="#contacto"
-            className="inline-flex items-center justify-center px-6 py-3 font-semibold text-white bg-[#282E40] hover:bg-[#1e3a8a] transition-all duration-300 hover:shadow-xl transform hover:-translate-y-0.5 text-base"
+            className="inline-flex items-center justify-center px-6 py-3 font-semibold text-white bg-[#011640] hover:bg-[#1e3a8a] transition-all duration-300 hover:shadow-xl transform hover:-translate-y-0.5 text-sm"
           >
             Enviar Consulta
           </Link>
@@ -121,28 +121,28 @@ export default function Header() {
         <div className="px-6 py-6 space-y-4">
           <Link
             href="#inicio"
-            className="block py-3 px-4 text-white font-source-sans font-medium hover:text-[#D9B166] hover:bg-white/10 transition-all duration-300"
+            className="block py-3 px-4 text-white font-source-sans font-medium hover:text-[#D9B26A] hover:bg-white/10 transition-all duration-300"
             onClick={() => setOpen(false)}
           >
             Inicio
           </Link>
           <Link
             href="#nosotros"
-            className="block py-3 px-4 text-white font-source-sans font-medium hover:text-[#D9B166] hover:bg-white/10 transition-all duration-300"
+            className="block py-3 px-4 text-white font-source-sans font-medium hover:text-[#D9B26A] hover:bg-white/10 transition-all duration-300"
             onClick={() => setOpen(false)}
           >
             Quiénes Somos
           </Link>
           <Link
             href="#servicios"
-            className="block py-3 px-4 text-white font-source-sans font-medium hover:text-[#D9B166] hover:bg-white/10 transition-all duration-300"
+            className="block py-3 px-4 text-white font-source-sans font-medium hover:text-[#D9B26A] hover:bg-white/10 transition-all duration-300"
             onClick={() => setOpen(false)}
           >
             Áreas de Práctica
           </Link>
           <Link
             href="#contacto"
-            className="block py-3 px-4 text-white font-source-sans font-medium hover:text-[#D9B166] hover:bg-white/10 transition-all duration-300"
+            className="block py-3 px-4 text-white font-source-sans font-medium hover:text-[#D9B26A] hover:bg-white/10 transition-all duration-300"
             onClick={() => setOpen(false)}
           >
             Contacto
@@ -150,7 +150,7 @@ export default function Header() {
           <div className="pt-4 border-t border-white/20">
             <Link
               href="#contacto"
-              className="block w-full text-center py-4 px-6 font-semibold text-white bg-[#282E40] hover:bg-[#1e3a8a] transition-all duration-300 shadow-lg"
+              className="block w-full text-center py-4 px-6 font-semibold text-white bg-[#011640] hover:bg-[#1e3a8a] transition-all duration-300 shadow-lg"
               onClick={() => setOpen(false)}
             >
               Enviar Consulta
