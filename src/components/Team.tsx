@@ -16,7 +16,7 @@ export default function Team() {
             <div className="relative overflow-hidden rounded-2xl shadow-xl group hover:shadow-2xl transition-shadow duration-500">
               <img 
                 src="/estudio.png" 
-                alt="Estudio Jurídico Mercado Ochoa Abogados - Oficinas en Neuquén"
+                alt="Estudio Jurídico Mercado Ochoa Abogados - Oficinas en todo Neuquén"
                 className="w-full h-64 lg:h-80 object-cover transition-all duration-700 group-hover:scale-110 group-hover:brightness-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-500"></div>
@@ -37,12 +37,12 @@ export default function Team() {
                 Nuestro Estudio
               </h3>
               <p className="text-sm lg:text-base text-white/90 font-source-sans leading-relaxed mb-4">
-                Somos un estudio jurídico en Neuquén orientado a resultados, comunicación clara y acompañamiento cercano. 
+                Somos un estudio jurídico en todo Neuquén orientado a resultados, comunicación clara y acompañamiento cercano. 
                 Nuestra metodología combina prevención del conflicto, negociación y, cuando es necesario, litigio.
               </p>
               <p className="text-sm lg:text-base text-white/80 font-source-sans leading-relaxed">
                 Trabajamos con honorarios transparentes, plazos por escrito y reportes periódicos. 
-                Si buscás abogados en Neuquén Capital que expliquen cada paso sin tecnicismos, estás en el lugar correcto.
+                Si buscás abogados en todo Neuquén que expliquen cada paso sin tecnicismos, estás en el lugar correcto.
               </p>
             </div>
             
