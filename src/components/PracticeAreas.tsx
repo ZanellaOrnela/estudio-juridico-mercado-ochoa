@@ -120,7 +120,7 @@ export default function PracticeAreas() {
                 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Link
-                    href="https://wa.me/5492995294952?text=Hola%20quisiera%20hacer%20una%20consulta"
+                    href="https://wa.me/5492994728756?text=Hola%20quisiera%20hacer%20una%20consulta"
                     className="group inline-flex items-center justify-center px-6 py-3 font-semibold text-[#011640] bg-[#D9B26A] hover:bg-[#c19a4d] transition-all duration-300 hover:shadow-lg transform hover:-translate-y-0.5 text-sm"
                     target="_blank"
                     rel="noopener noreferrer"

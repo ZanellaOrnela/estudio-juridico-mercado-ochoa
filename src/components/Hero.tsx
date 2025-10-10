@@ -62,7 +62,7 @@ export default function Hero() {
               {/* Botones de acción */}
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-end">
                 <Link
-                  href="https://wa.me/5492995294952?text=Hola%20quisiera%20hacer%20una%20consulta"
+                  href="https://wa.me/5492994728756?text=Hola%20quisiera%20hacer%20una%20consulta"
                   className="group inline-flex items-center justify-center px-8 py-4 font-semibold text-[#011640] bg-[#D9B26A] hover:bg-[#c19a4d] transition-all duration-300 hover:shadow-xl transform hover:-translate-y-1 text-sm rounded-lg"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -73,7 +73,7 @@ export default function Hero() {
                   Escribinos por WhatsApp
                 </Link>
                 <Link
-                  href="tel:+5492995294952"
+                  href="tel:+5492994728756"
                   className="group inline-flex items-center justify-center px-8 py-4 font-semibold text-white border-2 border-white/30 bg-white/10 backdrop-blur-sm hover:bg-white hover:text-[#011640] transition-all duration-300 text-sm rounded-lg"
                 >
                   <svg className="w-5 h-5 mr-3 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 20 20">

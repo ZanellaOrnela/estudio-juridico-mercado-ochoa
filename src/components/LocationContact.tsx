@@ -6,9 +6,9 @@ const MAP_QUERY = "Córdoba 466, Neuquén Capital, Argentina";
 const MAP_LAT: number | null = null;
 const MAP_LNG: number | null = null;
 const HAS_COORDS = MAP_LAT !== null && MAP_LNG !== null;
-const PHONE_DISPLAY = "299-5294952";
-const PHONE_DIAL = "+5492995294952";
-const WHATSAPP_URL = `https://wa.me/5492995294952?text=${encodeURIComponent("Hola, quisiera hacer una consulta.")}`;
+const PHONE_DISPLAY = "299-4728756";
+const PHONE_DIAL = "+5492994728756";
+const WHATSAPP_URL = `https://wa.me/5492994728756?text=${encodeURIComponent("Hola, quisiera hacer una consulta.")}`;
 const MAPS_LINK = HAS_COORDS
   ? `https://www.google.com/maps/search/?api=1&query=${MAP_LAT},${MAP_LNG}`
   : `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(MAP_QUERY)}`;

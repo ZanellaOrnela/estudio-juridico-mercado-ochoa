@@ -11,21 +11,41 @@ export default function Team() {
       title: "Nuestro Estudio",
       content: (
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-          {/* Imagen del estudio */}
+          {/* Imágenes del estudio */}
           <div className="order-2 lg:order-1">
-            <div className="relative overflow-hidden rounded-2xl shadow-xl group hover:shadow-2xl transition-shadow duration-500">
-              <img 
-                src="/estudio.png" 
-                alt="Estudio Jurídico Mercado Ochoa Abogados - Oficinas en todo Neuquén"
-                className="w-full h-64 lg:h-80 object-cover transition-all duration-700 group-hover:scale-110 group-hover:brightness-110"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-500"></div>
-              
-              {/* Overlay decorativo */}
-              <div className="absolute top-4 right-4 w-12 h-12 bg-[#D9B26A]/20 backdrop-blur-sm rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-2 group-hover:translate-y-0">
-                <svg className="w-6 h-6 text-[#D9B26A]" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clipRule="evenodd" />
-                </svg>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {/* Primera imagen - estudio.png */}
+              <div className="relative overflow-hidden rounded-2xl shadow-xl group hover:shadow-2xl transition-shadow duration-500">
+                <img 
+                  src="/estudio.png" 
+                  alt="Estudio Jurídico Mercado Ochoa Abogados - Oficinas en todo Neuquén"
+                  className="w-full h-96 lg:h-[28rem] object-cover transition-all duration-700 group-hover:scale-110 group-hover:brightness-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-500"></div>
+                
+                {/* Overlay decorativo */}
+                <div className="absolute top-4 right-4 w-10 h-10 bg-[#D9B26A]/20 backdrop-blur-sm rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-2 group-hover:translate-y-0">
+                  <svg className="w-5 h-5 text-[#D9B26A]" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clipRule="evenodd" />
+                  </svg>
+                </div>
+              </div>
+
+              {/* Segunda imagen - estudio ochoa.jpg */}
+              <div className="relative overflow-hidden rounded-2xl shadow-xl group hover:shadow-2xl transition-shadow duration-500">
+                <img 
+                  src="/estudio ochoa.jpg" 
+                  alt="Estudio Jurídico Mercado Ochoa - Espacios de trabajo y atención al cliente"
+                  className="w-full h-96 lg:h-[28rem] object-cover transition-all duration-700 group-hover:scale-110 group-hover:brightness-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-500"></div>
+                
+                {/* Overlay decorativo */}
+                <div className="absolute top-4 right-4 w-10 h-10 bg-[#D9B26A]/20 backdrop-blur-sm rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-2 group-hover:translate-y-0">
+                  <svg className="w-5 h-5 text-[#D9B26A]" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clipRule="evenodd" />
+                  </svg>
+                </div>
               </div>
             </div>
           </div>
@@ -78,9 +98,9 @@ export default function Team() {
           <div className="order-2 lg:order-1">
             <div className="relative overflow-hidden rounded-2xl shadow-xl group hover:shadow-2xl transition-shadow duration-500">
               <img 
-                src="/abogado.jpg" 
-                alt="Abogado del Estudio Jurídico Mercado Ochoa Abogados"
-                className="w-full h-64 lg:h-80 object-cover transition-all duration-700 group-hover:scale-110 group-hover:brightness-110"
+                src="/abogado ochoa.jpg" 
+                alt="Ariel Mercado Ochoa - Abogado y Procurador del Estudio Jurídico Mercado Ochoa"
+                className="w-full h-96 lg:h-[28rem] object-cover transition-all duration-700 group-hover:scale-110 group-hover:brightness-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-500"></div>
               
@@ -97,13 +117,17 @@ export default function Team() {
           <div className="order-1 lg:order-2 space-y-6">
             <div>
               <h3 className="text-lg lg:text-xl font-bold text-[#D9B26A] font-playfair mb-4">
-                Nuestro Abogado
+                Ariel Mercado Ochoa
               </h3>
               <p className="text-sm lg:text-base text-white/90 font-source-sans leading-relaxed mb-4">
-                [Aquí puedes agregar la información del abogado, su formación, experiencia, especialidades, etc.]
+                Soy Ariel Mercado Ochoa, abogado y procurador egresado de la Universidad Empresarial Siglo XXI, con especialización en Justicia Constitucional y Derechos Humanos.
+                Desde el inicio de mi carrera he desarrollado una práctica jurídica comprometida, enfocada en brindar un servicio profesional serio, accesible y transparente, basado en la responsabilidad y el respeto por cada cliente.
+              </p>
+              <p className="text-sm lg:text-base text-white/80 font-source-sans leading-relaxed mb-4">
+                Durante los últimos años he ejercido activamente la profesión en toda la provincia de Neuquén y Río Negro, representando a personas, familias y trabajadores en causas civiles, de familia, laborales, sucesorias y de accidentes de tránsito, así como en reclamos vinculados a ART, filiación y derechos reales.
               </p>
               <p className="text-sm lg:text-base text-white/80 font-source-sans leading-relaxed">
-                [Segundo párrafo con más detalles sobre el profesional, su enfoque, metodología de trabajo, etc.]
+                Mi labor se sustenta en la convicción de que el Derecho no solo debe resolver conflictos, sino también proteger derechos, prevenir injusticias y restaurar la confianza en las instituciones. Cada caso merece una mirada personalizada, porque detrás de cada expediente hay una historia, una persona y una expectativa legítima de justicia.
               </p>
             </div>
             
@@ -124,6 +148,68 @@ export default function Team() {
               <div className="flex items-center gap-3">
                 <div className="w-2 h-2 bg-[#D9B26A] rounded-full"></div>
                 <span className="text-white/80 font-source-sans text-sm">Derecho Ambiental</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      )
+    },
+    {
+      id: 2,
+      title: "Nuestro Abogado",
+      content: (
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+          {/* Imagen del abogado */}
+          <div className="order-2 lg:order-1">
+            <div className="relative overflow-hidden rounded-2xl shadow-xl group hover:shadow-2xl transition-shadow duration-500">
+              <img 
+                src="/abogado diaz.jpg" 
+                alt="Francisco A. Diaz - Abogado del Estudio Jurídico Mercado Ochoa"
+                className="w-full h-96 lg:h-[28rem] object-cover transition-all duration-700 group-hover:scale-110 group-hover:brightness-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-500"></div>
+              
+              {/* Overlay decorativo */}
+              <div className="absolute top-4 right-4 w-12 h-12 bg-[#D9B26A]/20 backdrop-blur-sm rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-2 group-hover:translate-y-0">
+                <svg className="w-6 h-6 text-[#D9B26A]" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
+                </svg>
+              </div>
+            </div>
+          </div>
+          
+          {/* Información del abogado */}
+          <div className="order-1 lg:order-2 space-y-6">
+            <div>
+              <h3 className="text-lg lg:text-xl font-bold text-[#D9B26A] font-playfair mb-4">
+                Francisco A. Diaz
+              </h3>
+              <p className="text-sm lg:text-base text-white/90 font-source-sans leading-relaxed mb-4">
+                Francisco A. Diaz se formó en la Universidad John F. Kennedy como abogado con enfoque práctico y humano. 
+                Trabaja con información clara y estrategias efectivas, priorizando resultados y un acompañamiento cercano en cada caso.
+              </p>
+              <p className="text-sm lg:text-base text-white/80 font-source-sans leading-relaxed">
+                Su metodología se basa en la comunicación transparente y el seguimiento personalizado, asegurando que cada cliente comprenda completamente el proceso legal y se sienta respaldado en todo momento.
+              </p>
+            </div>
+            
+            {/* Especialidades del abogado */}
+            <div className="grid sm:grid-cols-2 gap-4">
+              <div className="flex items-center gap-3">
+                <div className="w-2 h-2 bg-[#D9B26A] rounded-full"></div>
+                <span className="text-white/80 font-source-sans text-sm">Enfoque práctico</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <div className="w-2 h-2 bg-[#D9B26A] rounded-full"></div>
+                <span className="text-white/80 font-source-sans text-sm">Acompañamiento cercano</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <div className="w-2 h-2 bg-[#D9B26A] rounded-full"></div>
+                <span className="text-white/80 font-source-sans text-sm">Estrategias claras</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <div className="w-2 h-2 bg-[#D9B26A] rounded-full"></div>
+                <span className="text-white/80 font-source-sans text-sm">Resultados efectivos</span>
               </div>
             </div>
           </div>

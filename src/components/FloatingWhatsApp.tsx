@@ -1,4 +1,4 @@
-const WHATSAPP_URL = "https://wa.me/5492995294952?text=Hola%20quisiera%20hacer%20una%20consulta";
+const WHATSAPP_URL = "https://wa.me/5492994728756?text=Hola%20quisiera%20hacer%20una%20consulta";
 
 export default function FloatingWhatsApp() {
   return (
@@ -21,7 +21,7 @@ export default function FloatingWhatsApp() {
         {/* Texto del botón */}
         <div className="hidden sm:block">
           <div className="text-sm font-semibold">WhatsApp</div>
-          <div className="text-xs opacity-90">299-5294952</div>
+          <div className="text-xs opacity-90">299-4728756</div>
         </div>
         
         {/* Indicador de notificación */}
@@ -30,7 +30,7 @@ export default function FloatingWhatsApp() {
       
       {/* Botón de llamada (solo en móvil) */}
       <a
-        href="tel:+5492995294952"
+        href="tel:+5492994728756"
         aria-label="Llamar por teléfono"
         className="sm:hidden mt-3 w-12 h-12 bg-[#011640] hover:bg-[#1a2d4a] text-white rounded-full flex items-center justify-center shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
       >

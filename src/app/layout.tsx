@@ -59,7 +59,7 @@ export default function RootLayout({
     "url": "https://example.com",
     "logo": "https://example.com/ChatGPT Image 1 oct 2025, 11_38_06 p.m..png",
     "image": "https://example.com/ChatGPT Image 1 oct 2025, 11_38_06 p.m..png",
-    "telephone": "+5492995294952",
+    "telephone": "+5492994728756",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Córdoba 466",
