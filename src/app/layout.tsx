@@ -139,7 +139,7 @@ export default function RootLayout({
     },
     "sameAs": [
       "https://instagram.com/mercadoochoaabogados",
-      "https://linkedin.com/company/estudio-juridico-mercado-ochoa-abogados"
+      "https://www.linkedin.com/in/ariel-a-mercado-ochoa-11b05a2a0/"
     ]
   };
 

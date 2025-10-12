@@ -99,7 +99,7 @@ export default function Team() {
             <div className="relative overflow-hidden rounded-2xl shadow-xl group hover:shadow-2xl transition-shadow duration-500">
               <img 
                 src="/abogado ochoa.jpg" 
-                alt="Ariel Mercado Ochoa - Abogado y Procurador del Estudio Jurídico Mercado Ochoa"
+                alt="Ariel A. Mercado Ochoa - Abogado y Procurador del Estudio Jurídico Mercado Ochoa"
                 className="w-full h-96 lg:h-[28rem] object-cover transition-all duration-700 group-hover:scale-110 group-hover:brightness-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-500"></div>
@@ -117,17 +117,24 @@ export default function Team() {
           <div className="order-1 lg:order-2 space-y-6">
             <div>
               <h3 className="text-lg lg:text-xl font-bold text-[#D9B26A] font-playfair mb-4">
-                Ariel Mercado Ochoa
+                Ariel A. Mercado Ochoa
               </h3>
               <p className="text-sm lg:text-base text-white/90 font-source-sans leading-relaxed mb-4">
-                Soy Ariel Mercado Ochoa, abogado y procurador egresado de la Universidad Empresarial Siglo XXI, con especialización en Justicia Constitucional y Derechos Humanos.
+                Soy Ariel A. Mercado Ochoa, abogado y procurador egresado de la Universidad Empresarial Siglo XXI, con especialización en Justicia Constitucional y Derechos Humanos.
                 Desde el inicio de mi carrera he desarrollado una práctica jurídica comprometida, enfocada en brindar un servicio profesional serio, accesible y transparente, basado en la responsabilidad y el respeto por cada cliente.
               </p>
               <p className="text-sm lg:text-base text-white/80 font-source-sans leading-relaxed mb-4">
                 Durante los últimos años he ejercido activamente la profesión en toda la provincia de Neuquén y Río Negro, representando a personas, familias y trabajadores en causas civiles, de familia, laborales, sucesorias y de accidentes de tránsito, así como en reclamos vinculados a ART, filiación y derechos reales.
               </p>
-              <p className="text-sm lg:text-base text-white/80 font-source-sans leading-relaxed">
+              <p className="text-sm lg:text-base text-white/80 font-source-sans leading-relaxed mb-4">
                 Mi labor se sustenta en la convicción de que el Derecho no solo debe resolver conflictos, sino también proteger derechos, prevenir injusticias y restaurar la confianza en las instituciones. Cada caso merece una mirada personalizada, porque detrás de cada expediente hay una historia, una persona y una expectativa legítima de justicia.
+              </p>
+              <p className="text-sm lg:text-base text-white/80 font-source-sans leading-relaxed mb-4">
+                En el ejercicio diario de la profesión busco combinar la técnica jurídica con la empatía y la escucha activa, acompañando a cada cliente en todo el proceso con claridad, honestidad y dedicación.
+                Creo firmemente que una buena defensa se construye desde la confianza mutua, la preparación constante y la ética profesional.
+              </p>
+              <p className="text-sm lg:text-base text-white/80 font-source-sans leading-relaxed">
+                Actualmente soy fundador y titular del Estudio Jurídico Mercado Ochoa Abogados, un espacio concebido para brindar asesoramiento integral, con una atención cercana, eficiente y comprometida con la justicia.
               </p>
             </div>
             

@@ -78,6 +78,17 @@ export default function Footer() {
               <div className="flex items-start gap-3 group">
                 <div className="w-6 h-6 bg-white/10 flex items-center justify-center mt-0.5 group-hover:bg-white/20 transition-colors">
                   <svg className="w-3 h-3 text-[#D9B26A]" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M2.94 6.54a1 1 0 011.32-.5L8 8.5l3.74-2.46a1 1 0 011.32.5l.5.8a1 1 0 01-.5 1.32L9 11.5l-3.74 2.46a1 1 0 01-1.32-.5l-.5-.8a1 1 0 01.5-1.32L7 9.5l-3.74-2.46a1 1 0 01-.5-1.32l.5-.8z" clipRule="evenodd" />
+                  </svg>
+                </div>
+                <div>
+                  <p className="text-white font-source-sans text-sm font-semibold">Email</p>
+                  <a href="mailto:ariel@estudiomercadoochoa.com.ar" className="text-white/80 font-source-sans text-sm hover:text-[#D9B26A] transition-colors">ariel@estudiomercadoochoa.com.ar</a>
+                </div>
+              </div>
+              <div className="flex items-start gap-3 group">
+                <div className="w-6 h-6 bg-white/10 flex items-center justify-center mt-0.5 group-hover:bg-white/20 transition-colors">
+                  <svg className="w-3 h-3 text-[#D9B26A]" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
                   </svg>
                 </div>

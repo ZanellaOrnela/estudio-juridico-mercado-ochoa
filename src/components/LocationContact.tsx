@@ -8,6 +8,7 @@ const MAP_LNG: number | null = null;
 const HAS_COORDS = MAP_LAT !== null && MAP_LNG !== null;
 const PHONE_DISPLAY = "299-4728756";
 const PHONE_DIAL = "+5492994728756";
+const EMAIL = "ariel@estudiomercadoochoa.com.ar";
 const WHATSAPP_URL = `https://wa.me/5492994728756?text=${encodeURIComponent("Hola, quisiera hacer una consulta.")}`;
 const MAPS_LINK = HAS_COORDS
   ? `https://www.google.com/maps/search/?api=1&query=${MAP_LAT},${MAP_LNG}`
@@ -65,6 +66,14 @@ export default function LocationContact() {
                         </a>
                       </p>
                     </div>
+                    <div>
+                      <h4 className="font-playfair font-semibold text-[#011640] text-sm mb-1">Email</h4>
+                      <p className="text-[#4b5563] font-source-sans text-sm">
+                        <a href={`mailto:${EMAIL}`} className="underline decoration-[#D9B26A]/50 underline-offset-2">
+                          {EMAIL}
+                        </a>
+                      </p>
+                    </div>
                   </div>
 
                   <div className="grid sm:grid-cols-2 gap-6">
@@ -76,8 +85,8 @@ export default function LocationContact() {
                     </div>
                     <div>
                       <h4 className="font-playfair font-semibold text-[#011640] text-sm mb-1">LinkedIn</h4>
-                      <a href="https://linkedin.com/company/estudio-juridico-mercado-ochoa-abogados" target="_blank" rel="noopener noreferrer" className="text-[#D9B26A] hover:text-[#011640] text-sm font-source-sans">
-                        Estudio Jurídico Mercado Ochoa Abogados
+                      <a href="https://www.linkedin.com/in/ariel-a-mercado-ochoa-11b05a2a0/" target="_blank" rel="noopener noreferrer" className="text-[#D9B26A] hover:text-[#011640] text-sm font-source-sans">
+                        Ariel A. Mercado Ochoa
                       </a>
                     </div>
                   </div>
