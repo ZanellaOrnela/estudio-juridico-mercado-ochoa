@@ -165,6 +165,7 @@ export default function RootLayout({
         <meta name="googlebot" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#011640" />
+        <meta name="google-site-verification" content="r7W9ddaE6k6m_UMpV_uQ07D1q9RKFwN5Ex6mRLPuLyU" />
       </head>
       <body
         className={`${playfairDisplay.variable} ${sourceSans3.variable} antialiased transition-all duration-300 bg-transparent`}
